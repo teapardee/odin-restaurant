@@ -52,7 +52,7 @@ img {
 
 nav {
   flex-grow: 0.25;
-  margin-right: 10vw;
+  margin-right: 5vw;
 }
 
 nav ul {
@@ -65,7 +65,8 @@ nav ul {
 nav ul li {
   font-size: 2rem;
 }
+
 nav ul li:hover {
-  color: #4988ac;
+  color: #b43322;
   cursor: pointer;
 }
