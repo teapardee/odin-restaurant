@@ -1,4 +1,11 @@
 import './style.css';
-import initializeWebsite from './website';
+import renderHeader from './header';
+import renderHome from './home';
 
-initializeWebsite();
+init();
+
+function init() {
+  const content = document.getElementById('headerContainer');
+
+  content.appendChild(renderHeader());
+}

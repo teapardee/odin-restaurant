@@ -70,3 +70,16 @@ nav ul li:hover {
   color: #b43322;
   cursor: pointer;
 }
+
+#content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-container {
+  display: flex;
+  width: 75vw;
+  height: 25vh;
+  background-color: white;
+}

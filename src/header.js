@@ -1,4 +1,7 @@
-function createHeader() {
+import renderHome from './home';
+
+function renderHeader() {
+  console.log('test');
   const header = document.createElement('header');
 
   //logo
@@ -19,8 +22,13 @@ function createHeader() {
   const ul = document.createElement('ul');
   const home = document.createElement('li');
   home.innerHTML = 'HOME';
+  home.addEventListener('click', () => {
+    renderHome();
+  });
+
   const menu = document.createElement('li');
   menu.innerHTML = 'MENU';
+
   const contact = document.createElement('li');
   contact.innerHTML = 'CONTACT';
 
@@ -33,10 +41,4 @@ function createHeader() {
   return header;
 }
 
-function initializeWebsite() {
-  const content = document.getElementById('content');
-
-  content.appendChild(createHeader());
-}
-
-export default initializeWebsite;
+export default renderHeader;
