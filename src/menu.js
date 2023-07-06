@@ -1,7 +1,8 @@
 function renderMenu() {
-  const content = document.getElementById('content');
+  const menuContainer = document.createElement('div');
+  menuContainer.classList.add('menu-container');
 
-  const menuContainer = document.createElement(div);
+  return menuContainer;
 }
 
 export default renderMenu;

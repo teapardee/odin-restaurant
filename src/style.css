@@ -77,9 +77,19 @@ nav ul li:hover {
   align-items: center;
 }
 
-.home-container {
+.home-container,
+.menu-container {
+  margin-top: 15vh;
   display: flex;
-  width: 75vw;
-  height: 25vh;
+  width: 50vw;
+  height: 50vh;
   background-color: white;
+}
+
+.contact-container {
+  margin-top: 15vh;
+  display: flex;
+  width: 50vw;
+  height: 50vh;
+  background-color: red;
 }

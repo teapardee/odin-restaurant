@@ -1,8 +1,9 @@
-import renderHome from './home';
+import switchPage from './index.js';
 
 function renderHeader() {
-  console.log('test');
   const header = document.createElement('header');
+
+  console.log('test');
 
   //logo
 
@@ -22,15 +23,24 @@ function renderHeader() {
   const ul = document.createElement('ul');
   const home = document.createElement('li');
   home.innerHTML = 'HOME';
-  home.addEventListener('click', () => {
-    renderHome();
+  home.id = 'HOME';
+  home.addEventListener('click', (e) => {
+    switchPage(e);
   });
 
   const menu = document.createElement('li');
   menu.innerHTML = 'MENU';
+  menu.id = 'MENU';
+  menu.addEventListener('click', (e) => {
+    switchPage(e);
+  });
 
   const contact = document.createElement('li');
   contact.innerHTML = 'CONTACT';
+  contact.id = 'CONTACT';
+  contact.addEventListener('click', (e) => {
+    switchPage(e);
+  });
 
   header.appendChild(nav);
   nav.appendChild(ul);
