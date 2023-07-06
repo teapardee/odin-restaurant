@@ -9,6 +9,8 @@ init();
 function init() {
   const header = document.getElementById('headerContainer');
   header.appendChild(renderHeader());
+  const content = document.getElementById('content');
+  content.appendChild(renderHome());
 }
 
 function switchPage(e) {

@@ -82,9 +82,10 @@ nav ul li:hover {
 .menu-container,
 .contact-container {
   margin-top: 15vh;
-  display: flex;
-  width: 50vw;
-  height: 50vh;
+
+  width: fit-content;
+  height: fit-content;
+  padding: 50px;
 }
 
 .contact-container {
@@ -92,9 +93,42 @@ nav ul li:hover {
 }
 
 .home-container {
-  background-color: blue;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .menu-container {
   background-color: white;
+}
+
+.home-body {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  color: #b13221;
+  font-size: 2rem;
+  line-height: 200%;
+}
+
+.book-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(178, 51, 33, 0.75);
+  color: white;
+  font-size: 2rem;
+  height: 50px;
+  width: 200px;
+  margin-top: 25px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.book-btn:hover {
+  transform: scale(105%);
+  cursor: pointer;
 }
