@@ -27,7 +27,6 @@ function switchPage(e) {
       content.appendChild(renderContact());
       break;
     default:
-      console.log(page);
   }
 }
 

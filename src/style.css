@@ -44,6 +44,7 @@ header {
   padding: 2rem;
   width: 15vw;
   flex: 1;
+  cursor: pointer;
 }
 
 img {
@@ -78,18 +79,22 @@ nav ul li:hover {
 }
 
 .home-container,
-.menu-container {
-  margin-top: 15vh;
-  display: flex;
-  width: 50vw;
-  height: 50vh;
-  background-color: white;
-}
-
+.menu-container,
 .contact-container {
   margin-top: 15vh;
   display: flex;
   width: 50vw;
   height: 50vh;
+}
+
+.contact-container {
   background-color: red;
+}
+
+.home-container {
+  background-color: blue;
+}
+
+.menu-container {
+  background-color: white;
 }
